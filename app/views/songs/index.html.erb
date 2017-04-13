@@ -1,0 +1,19 @@
+<h1>Songs#index</h1>
+<p>Find me in app/views/songs/index.html.erb</p>
+
+<table>
+
+<tbody>
+<% @songs.each do |song| %>
+ <tr>
+   <td><%= song.title %></td>
+   <td><%= song.artist_name %></td>
+   <td><%= song.genre %></td>
+   <td><%= song.released %></td>
+   <td><%= song.release_year %></td>
+ </tr>
+<% end %>
+
+</tbody>
+
+</table>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= @song.title%>
+    <%= @song.released%>
+    <%= @song.release_year%>
+    <%= @song.artist_name%>
+    <%= @song.genre%>
+  </body>
+
+  <%= form_tag people_path(@song.id), method: "delete" %>
+    <%= submit_tag "Delete #{@song.name}" %>
+    <form accept-charset="UTF-8" action="/songs/1" method="**post**">
+    <input name="_method" type="hidden" value="**delete**" />
+  <% end %>
+  
+</html>
